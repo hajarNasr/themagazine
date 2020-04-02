@@ -1,0 +1,90 @@
+@import url("the-magazine-style.css");
+/* All the media queries for a responsive design */
+
+@media (max-width:900px){
+    .home{
+        grid-template-columns: 1fr auto;
+        grid-template-rows: auto;
+    }
+    .magazine{
+        font-size: 2.5rem;
+    }
+    .story_of_the_day{
+        width: 100%;
+        margin-top: 10px;
+    }
+    .story_of_the_day p{
+        font-size: large;
+    }
+    .story_of_the_day img{
+        width: 100%;
+    }
+    .sidebar{
+        grid-column: 1/-1;
+        justify-self: center;
+        height: 100%;
+        width:95%;
+        padding-top: 30px;
+    }
+    .politics_word, .health_word{
+        font-size: 2rem;
+    }
+    .sidebar_item{
+        padding:0px;
+    }
+    .sidebar p{
+        padding: 5px;
+    }
+    .latest_news, .politics_content{
+        padding: 0px;
+        width:95%;
+    }
+    .latest_news_item, .pol_content_item{
+        padding: 0px;
+    }
+    .pol_content_item{
+        height: 200px;
+    }
+    
+}
+@media (min-width:901px) and (max-width:1199px){
+    .latest_news{
+        padding: 0px;
+        width:95%;
+    }
+    .latest_news_item{
+        height: 180px;
+    }
+    .latest_news_item p{
+        font-size:16px;
+    }
+}
+@media (min-width:500px) and (max-width:900px){
+    .latest_news{
+        width:70%;
+    }
+    .latest_news_item{
+        height: 150px;
+    }
+    .magazine{
+        font-size: 3rem;
+    }
+}
+@media (max-width:370px){
+    .story_of_the_day p{
+        font-size: 1rem;
+    }
+    .magazine{
+        font-size: 2rem;
+    }
+    .sidebar p{
+        font-size:1rem;
+    }
+}
+
+@media (orientation:landscape){
+    .story_of_the_day img{
+        width:80%;
+        height: 70%;
+    }
+}
