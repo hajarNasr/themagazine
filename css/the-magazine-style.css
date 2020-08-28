@@ -62,6 +62,11 @@ a{text-decoration: none;}
     bottom:20px;
     outline: none;
     font-size: 17px;
+    display: none;
+    cursor: pointer;
+}
+.btn-up:hover{
+    background: rgb(173, 57, 57);
 }
 /*MAIN*/
 .main{

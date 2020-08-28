@@ -63,7 +63,9 @@
                <a href="" class="read_more sidebar_item">Read More</a>
                </div>
             
-               <button class="btn-up"><i class="fa fa-angle-double-up"></i></button>
+               <button class="btn-up" onclick="topFunction()" id="upBtn">
+                  <i class="fa fa-angle-double-up"></i>
+               </button>
              </section>
              <section class="politics">
                   <div class="politics_word"><span class="starts_with">Poli</span><span class="ends_with">tics</span></div>
@@ -271,5 +273,23 @@
             </ul>
            </footer>
         </div>
+
+        <script>
+         var upBtn = document.getElementById("upBtn");
+         
+         window.onscroll = function(){
+           if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            upBtn.style.display = "block";
+           } else {
+            upBtn.style.display = "none";
+           }
+         }
+         function topFunction() {
+            window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        })
+         }
+         </script>
     </body>
 </html>      
